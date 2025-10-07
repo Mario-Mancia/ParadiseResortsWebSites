@@ -1,0 +1,46 @@
+.app-header {
+  font-family: "Google Sans", "Roboto", sans-serif;
+  color: #333;
+}
+
+.app-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.company-name {
+  font-size: 1rem;
+  color: #34a853;
+  font-weight: 500;
+}
+
+.stats-row .stat-label {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.stats-row .stat-value {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.buttons-row .btn {
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 24px;
+}
+
+/* Estilo para TextButtons con ícono */
+.buttons-row .btn-link {
+  color: #34a853;
+  font-weight: 500;
+}
+
+.buttons-row .btn-link:hover {
+  text-decoration: underline;
+  color: #34a853;
+}
+
+.device-text {
+  font-size: 0.85rem;
+}

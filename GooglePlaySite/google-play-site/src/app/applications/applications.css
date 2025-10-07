@@ -1,0 +1,27 @@
+.content-left,
+.content-right {
+  font-family: "Google Sans", "Roboto", sans-serif;
+  color: #333;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.content-left {
+  min-height: 400px;
+}
+
+.content-right {
+  min-height: 400px;
+  border-left: 1px solid #eee;
+}
+
+.app-logo {
+    width: 256px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

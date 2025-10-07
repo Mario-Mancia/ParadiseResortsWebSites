@@ -1,0 +1,45 @@
+.image-row-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.image-row {
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  overflow-x: auto;
+}
+
+.app-screenshot-row {
+  width: 180px;       /* tamaño tipo celular */
+  height: 360px;      /* escala celular */
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex-shrink: 0;     /* evita que se compriman las imágenes */
+}
+
+/* Botones de scroll */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.3);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.scroll-btn.left {
+  left: -10px;
+}
+
+.scroll-btn.right {
+  right: -10px;
+}
+
+

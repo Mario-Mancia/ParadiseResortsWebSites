@@ -1,0 +1,36 @@
+.app-info {
+  font-family: "Google Sans", "Roboto", sans-serif;
+  color: #333;
+}
+
+.info-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.app-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.last-update {
+  font-size: 0.85rem;
+}
+
+.btn-outline-secondary {
+  color: #444;
+  border-color: #ccc;
+  font-size: 0.85rem;
+  transition: all 0.25s ease;
+}
+
+.btn-outline-secondary:hover {
+  color: #34a853;
+  border-color: #34a853;
+  background-color: rgba(52, 168, 83, 0.1);
+}
+
+.btn-link mat-icon {
+  font-size: 24px;
+  vertical-align: middle;
+}

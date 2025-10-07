@@ -1,1 +1,78 @@
-<p>applications works!</p>
+<div class="container mt-4q">
+    <div class="row">
+        <!-- Columna izquierda-->
+        <div class="col-lg-8 col-md-12 mb-4 mt-3">
+
+            <!-- Contenido principal -->
+            <app-app-header></app-app-header>
+
+            <!-- Carrusel de imágenes -->
+            <app-image-carousel></app-image-carousel>
+
+            <!-- Seccón de información de la aplicación -->
+
+            <app-app-info></app-app-info>
+
+            <!-- Sección de seguridad de los datos -->
+            <app-security-info></app-security-info>
+
+            <!-- Sección de Novedades: -->
+            <app-changelog></app-changelog>
+
+        </div>
+        <!-- Columna derecha -->
+        <div class="col-lg-4 col-md-12 content-right mt-3">
+            <!-- Logo -->
+            <img src="images/icono_paradise_resort.svg" alt="App icon" class="app-logo">
+
+            <!-- Sección de asistencia -->
+            <div class="app-support p-3 bg-white shadow-sm rounded mt-4">
+                <!-- Título con flecha -->
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="section-title mb-0">Asistencia de la aplicación</h5>
+                    <button class="btn btn-link p-0 text-decoration-none" aria-label="Expandir asistencia">
+                        <mat-icon>keyboard_arrow_down</mat-icon>
+                    </button>
+                </div>
+
+                <!-- Contenido (desplegable) -->
+                <div class="support-details">
+                    <!-- Sitio web -->
+                    <div class="support-row d-flex align-items-start mb-2">
+                        <mat-icon class="me-2">public</mat-icon>
+                        <p class="mb-0 fw-semibold">Sitio web</p>
+                    </div>
+
+                    <!-- Correo de asistencia -->
+                    <div class="support-row d-flex align-items-start mb-2">
+                        <mat-icon class="me-2">email</mat-icon>
+                        <div>
+                            <p class="mb-0 fw-semibold">Correo electrónico de asistencia</p>
+                            <small class="text-muted">appsupport@paradiseresorts.com</small>
+                        </div>
+                    </div>
+
+                    <!-- Política de privacidad -->
+                    <div class="support-row d-flex align-items-start mb-2">
+                        <mat-icon class="me-2">shield</mat-icon>
+                        <span>Política de Privacidad</span>
+                    </div>
+
+                    <!-- Información del desarrollador -->
+                    <div class="support-row d-flex align-items-start mb-2">
+                        <mat-icon class="me-2">info</mat-icon>
+                        <div>
+                            <p class="mb-0 fw-semibold">Información del desarrollador</p>
+                            <small class="text-muted d-block">Hoteles Paradise Resorts, S.A de C.V.</small>
+                            <small class="text-muted d-block">archi@thepalacecompany.com</small>
+                            <small class="text-muted d-block">Col. Escalón, 79 calle pte. #35</small>
+                            <small class="text-muted d-block">San Salvador, San Salvador, El Salvador</small>
+                            <small class="text-muted d-block">+503 7777 0000</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,26 @@
+.security-card {
+  background-color: #f9fafb;
+  border: 1px solid #e0e0e0;
+}
+
+.security-row mat-icon {
+  font-size: 22px;
+}
+
+.security-row p {
+  font-size: 0.95rem;
+}
+
+.security-row small {
+  font-size: 0.8rem;
+}
+
+.google-play-label {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #34a853;
+  border-radius: 4px;
+}

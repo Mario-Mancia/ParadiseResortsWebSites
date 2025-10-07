@@ -1,0 +1,14 @@
+{
+  "name": "googleplaysite",
+  "version": "1.0.0",
+  "description": "Una réplica de la página de Google Play que represente la información de la aplicación Paradise Resorts",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "keywords": [
+    "GooglePlaySite"
+  ],
+  "author": "Mario-Mancia",
+  "license": "ISC"
+}

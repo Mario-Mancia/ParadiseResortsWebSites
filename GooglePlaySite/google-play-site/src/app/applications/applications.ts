@@ -5,6 +5,7 @@ import { SecurityInfo } from '../security-info/security-info';
 import { Changelog } from '../changelog/changelog';
 import { ImageCarousel } from '../image-carousel/image-carousel';
 import { MatIcon } from '@angular/material/icon';
+import { Footer } from '../footer/footer';
 
 @Component({
   selector: 'app-applications',
@@ -14,7 +15,8 @@ import { MatIcon } from '@angular/material/icon';
     AppInfo,
     SecurityInfo,
     Changelog,
-    ImageCarousel
+    ImageCarousel,
+    Footer
   ],
   templateUrl: './applications.html',
   styleUrls: ['./applications.css']

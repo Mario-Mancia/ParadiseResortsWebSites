@@ -1,0 +1,46 @@
+.app-footer {
+  font-family: "Google Sans", "Roboto", sans-serif;
+  color: #444;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #555;
+
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #34a853;
+  text-decoration: none;
+}
+
+.footer-bottom-links .list-inline-item + .list-inline-item {
+  margin-left: 1rem;
+}
+
+.footer-bottom-links a {
+  font-size: 0.85rem;
+  color: #777;
+  transition: color 0.2s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: #34a853;
+}
+
+.app-footer small {
+  font-size: 0.85rem;
+}

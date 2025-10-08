@@ -65,4 +65,8 @@ export class HomeComponent {
       this.openModalServiceBuffet = !this.openModalServiceBuffet
   }
 
+  goToSlide(index: number) {
+  this.currentIndex = index;
+}
+
 }

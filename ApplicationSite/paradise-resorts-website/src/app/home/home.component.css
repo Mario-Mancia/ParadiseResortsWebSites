@@ -16,7 +16,6 @@
   box-sizing: border-box;
 }
 
-/* HEADER FIJO ARRIBA */
 .home-header {
   position: fixed;
   top: 0;
@@ -29,13 +28,11 @@
   text-align: center;
 }
 
-/* CONTENEDOR DE NAVEGACIÓN PARA CENTRAR */
 .navbar {
   max-width: 960px;
   margin: 0 auto;
 }
 
-/* ESTILOS DE LOS LINKS DEL MENÚ */
 .nav-links {
   list-style: none;
   display: flex;
@@ -87,6 +84,13 @@ ul {
 }
 
 
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .carousel {
   position: relative;
   width: 600px;
@@ -94,9 +98,56 @@ ul {
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 40px auto; 
-  display: block;
+  margin: 0 auto;
 }
+
+.external-controls {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 350px); 
+  width: 700px; 
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none; 
+}
+
+.external-controls button {
+  pointer-events: all; 
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.external-controls button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 8px;
+}
+
+.indicators span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicators span.active {
+  background-color: white;
+}
+
 
 .slides {
   display: flex;
@@ -173,6 +224,7 @@ button {
   color: black;
   cursor: pointer;
   font-weight: bold;
+  border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 

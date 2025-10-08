@@ -22,6 +22,7 @@
 
 .nav-link.active {
   color: #34a853;
+  text-decoration: underline;
 }
 
 .nav-link.active::after {

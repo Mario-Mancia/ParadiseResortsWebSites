@@ -30,17 +30,21 @@
                 <!-- Título con flecha -->
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <h5 class="section-title mb-0">Asistencia de la aplicación</h5>
-                    <button class="btn btn-link p-0 text-decoration-none" aria-label="Expandir asistencia">
-                        <mat-icon>keyboard_arrow_down</mat-icon>
+                    <button class="btn btn-link p-0 text-decoration-none" aria-label="Expandir asistencia"
+                        (click)="toggleSupport()">
+                        <mat-icon>{{ supportExpanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down' }}</mat-icon>
                     </button>
                 </div>
 
                 <!-- Contenido (desplegable) -->
-                <div class="support-details">
+                <div class="support-details" *ngIf="supportExpanded">
                     <!-- Sitio web -->
                     <div class="support-row d-flex align-items-start mb-2">
                         <mat-icon class="me-2">public</mat-icon>
-                        <p class="mb-0 fw-semibold">Sitio web</p>
+                        <a href="http://localhost:4202" target="_blank" rel="noopener noreferrer"
+                            class="mb-0 fw-semibold text-decoration-none">
+                            Sitio web
+                        </a>
                     </div>
 
                     <!-- Correo de asistencia -->
@@ -55,23 +59,34 @@
                     <!-- Política de privacidad -->
                     <div class="support-row d-flex align-items-start mb-2">
                         <mat-icon class="me-2">shield</mat-icon>
-                        <span>Políticas de Privacidad</span>
+                        <span class="fw-semibold">Políticas de Privacidad</span>
                     </div>
 
-                    <!-- Información del desarrollador -->
+                    <!-- Información de los desarrolladores -->
                     <div class="support-row d-flex align-items-start mb-2">
                         <mat-icon class="me-2">info</mat-icon>
                         <div>
-                            <p class="mb-0 fw-semibold">Información del desarrollador</p>
-                            <small class="text-muted d-block">Hoteles Paradise Resorts, S.A de C.V.</small>
-                            <small class="text-muted d-block">archi@thepalacecompany.com</small>
-                            <small class="text-muted d-block">Col. Escalón, 79 calle pte. #35</small>
-                            <small class="text-muted d-block">San Salvador, San Salvador, El Salvador</small>
+                            <p class="mb-0 fw-semibold">Información de los desarrolladores</p>
+                            
+                            <p class="mb-0 fw-normal">Frontend</p>
+                            <small class="text-muted d-block">GitHub: Mario-Mancia</small>
+                            <small class="text-muted d-block">emanuel@theparadicecompany.com</small>
+                            <small class="text-muted d-block">Col. Ciudad Paraíso. #35</small>
+                            <small class="text-muted d-block">Santa Ana, Santa Ana, El Salvador</small>
+                            <small class="text-muted d-block">+503 8888 0000</small>
+                             <br>
+                            
+                            <p class="mb-0 fw-normal">Backend</p>
+                            <small class="text-muted d-block">GitHub: emanuelmath</small>
+                            <small class="text-muted d-block">mario@theparadicecompany.com</small>
+                            <small class="text-muted d-block">Col. Tazumal, Chalchuapa</small>
+                            <small class="text-muted d-block">Santa Ana, El Salvador</small>
                             <small class="text-muted d-block">+503 7777 0000</small>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
     </div>

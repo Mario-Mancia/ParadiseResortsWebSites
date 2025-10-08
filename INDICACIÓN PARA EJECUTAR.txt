@@ -1,0 +1,6 @@
+SITIOS WEB ESTRUCTURADOS CON ANGULAR
+
+- Posicionarse en esta carpeta Raíz (ParadiseResortsWebSites).
+- Abrir terminal aquí.
+- Ejecutar "npm start" (este es el script de arranque, se requiere node.js/npm instalado).
+- Clickar en el link de localhost (cualquiera) para abrir una de las dos Web Sites. (4201 para Play Store, 4202 para Sitio Web)

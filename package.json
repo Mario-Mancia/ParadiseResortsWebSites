@@ -4,6 +4,7 @@
   "description": "Sitios web simulando el entorno de Google Play y el sitio web de la aplicación.",
   "main": "index.js",
   "scripts": {
+    "setup": "npm install && concurrently \"cd GooglePlaySite/google-play-site && npm install\" \"cd ApplicationSite/paradise-resorts-website && npm install\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently -n PLAY,APP -c blue,green \"cd GooglePlaySite/google-play-site && ng serve --port 4201\" \"cd ApplicationSite/paradise-resorts-website && ng serve --port 4202\""
   },

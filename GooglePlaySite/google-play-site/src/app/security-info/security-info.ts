@@ -16,8 +16,10 @@ export class SecurityInfo {
   constructor(private dialog: MatDialog ) {}
   openDialog() {
     this.dialog.open(SecurityDialog, {
-      width: '800px',
-      height: '80vh',
+      width: '90vw', 
+      maxWidth: '100vw',
+      height: '75vh',        // 🔽 Reducido de 85vh a 75vh
+      maxHeight: '80vh',     // 🔽 Limita la altura
       panelClass: 'custom-dialog-container'
     });
   }

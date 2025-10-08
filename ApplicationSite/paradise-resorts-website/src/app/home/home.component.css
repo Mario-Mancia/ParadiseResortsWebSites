@@ -23,7 +23,7 @@
   left: 0;
   width: 100%;
   background: rgba(64, 93, 230, 0.9); /* fondo semitransparente */
-  padding: 10px 0;
+  padding: 3px 0;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   text-align: center;
@@ -72,6 +72,15 @@
 .cta {
   margin-bottom: 30px;
 }
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 
 ul {
   padding-left: 20px;

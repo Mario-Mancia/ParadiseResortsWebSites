@@ -1,0 +1,24 @@
+{
+  "name": "paradiseresortswebsites",
+  "version": "1.0.0",
+  "description": "Sitios web simulando el entorno de Google Play y el sitio web de la aplicación.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently -n PLAY,APP -c blue,green \"cd GooglePlaySite/google-play-site && ng serve --port 4201\" \"cd ApplicationSite/paradise-resorts-website && ng serve --port 4202\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mario-Mancia/ParadiseResortsWebSites.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mario-Mancia/ParadiseResortsWebSites/issues"
+  },
+  "homepage": "https://github.com/Mario-Mancia/ParadiseResortsWebSites#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

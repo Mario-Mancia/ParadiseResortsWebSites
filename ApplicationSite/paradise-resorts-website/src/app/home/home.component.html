@@ -39,9 +39,28 @@
       <h2>Servicios destacados</h2>
       <ul>
         <li>
-          <img src="assets/spa.jpg" alt="Spa relax" />
-          Spa relax
-        </li>
+  <img src="assets/spa.jpg" alt="Spa relax" />
+  <p>Spa relax</p>
+
+  <div class="button-wrapper">
+    <button (click)="openModalOfSpa()">Ver más</button>
+  </div>
+
+  <div
+    class="modal-backdrop"
+    *ngIf="openModalServiceSpa"
+    (click)="openModalOfSpa()"
+  >
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <span class="close-button" (click)="openModalOfSpa()">&times;</span>
+      <img src="assets/spa.jpg" alt="Imagen del modal de Spa." />
+      <h2>Información del resort</h2>
+      <p>
+        Este resort ofrece instalaciones de primer nivel, playa privada, spa completo y mucho más.
+      </p>
+    </div>
+  </div>
+</li>
         <li>
           <img src="assets/transporte.jpeg" alt="Transporte VIP" />
           Transporte VIP

@@ -1,6 +1,6 @@
 import { Component} from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router';
+//import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -31,8 +31,12 @@ export class HomeComponent {
   'assets/hotelvolcanes3.jpg',
 ];
 
-
   currentIndex = 0;
+
+  openModalServiceSpa = false
+  openModalServiceTransport = false
+  openModalServiceTour = false
+  openModalServiceBuffet = false
 
   nextSlide() {
     this.currentIndex = (this.currentIndex + 1) % this.images.length;
@@ -46,6 +50,19 @@ export class HomeComponent {
     //this.router.navigateByUrl("")
     const urlExterna = 'https://play.google.com/store/apps/details?id=com.palaceresorts.app&pli=1';
     window.open(urlExterna, '_blank');
+  }
+
+  openModalOfSpa() {
+      this.openModalServiceSpa = !this.openModalServiceSpa
+  }
+  openModalOfTransport() {
+      this.openModalServiceTransport = !this.openModalServiceTransport
+  }
+  openModalOfTour() {
+      this.openModalServiceTour = !this.openModalServiceTour
+  }
+  openModalOfBuffet() {
+      this.openModalServiceBuffet = !this.openModalServiceBuffet
   }
 
 }

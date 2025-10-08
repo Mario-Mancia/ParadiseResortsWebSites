@@ -1,21 +1,54 @@
 <div class="contact-container">
 
-<header class="contact-header">
+  <header class="contact-header">
     <nav class="navbar">
       <ul class="nav-links">
-        <li><a href="">Inicio</a></li>
-        <li><a href="contact">Contacto</a></li>
-        <li><a href="about">Acerca De</a></li>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/contact">Contacto</a></li>
+        <li><a href="/about">Sobre nosotros</a></li>
       </ul>
     </nav>
-    <h1>Acá puedes contactarnos</h1>
+    <h1>Contáctanos</h1>
     <p>¡Tus dudas serán despejadas!</p>
   </header>
 
   <main class="contact-main">
-    <h1> Puedes contac</h1>
-    <ul class="contact-links">
-        <li>Teléfono: </li>
-    </ul>
+    <section class="contact-intro">
+      <h2>¿Tienes dudas o quejas?</h2>
+      <p>
+        En <strong>Paradise Resorts</strong> estamos siempre disponibles para ayudarte.
+        Aquí están nuestras vías de contacto:
+      </p>
+    </section>
+
+    <section class="contact-info">
+  <img src="assets/contacto.jpg" alt="Imagen de contacto" class="contact-image" />
+
+  <h2>Información de contacto</h2>
+  <dl>
+    <div>
+      <dt>Teléfono:</dt>
+      <dd>7777-7777</dd>
+    </div>
+    <div>
+      <dt>Email:</dt>
+      <dd>
+        <a href="mailto:contact@paradiseresorts.com">contact&#64;paradiseresorts.com</a>
+      </dd>
+    </div>
+    <div>
+      <dt>Formulario de quejas:</dt>
+      <dd>
+        <button class="button" (click)="openFormLink()" aria-label="Abrir formulario de quejas en una nueva pestaña">
+          Haz clic aquí
+        </button>
+      </dd>
+    </div>
+  </dl>
+</section>
   </main>
+ <footer class="contact-footer">
+    <p>&copy; 2025 Paradise Resort. Todos los derechos reservados.</p>
+  </footer>
 </div>
+

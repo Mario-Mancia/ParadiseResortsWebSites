@@ -48,7 +48,7 @@ export class HomeComponent {
 
   openLinkOfPlayStoreWebSite() {
     //this.router.navigateByUrl("")
-    const urlExterna = 'https://play.google.com/store/apps/details?id=com.palaceresorts.app&pli=1';
+    const urlExterna = 'http://localhost:4201';
     window.open(urlExterna, '_blank');
   }
 
@@ -64,5 +64,9 @@ export class HomeComponent {
   openModalOfBuffet() {
       this.openModalServiceBuffet = !this.openModalServiceBuffet
   }
+
+  goToSlide(index: number) {
+  this.currentIndex = index;
+}
 
 }

@@ -5,10 +5,10 @@
       <ul class="nav-links">
         <li><a href="">Inicio</a></li>
         <li><a href="contact">Contacto</a></li>
-        <li><a href="about">Acerca De</a></li>
+        <li><a href="about">Sobre nosotros</a></li>
       </ul>
     </nav>
-    <h1>Bienvenido a Paradise Resort</h1>
+    <h1>Bienvenido a Paradise Resorts</h1>
     <p>Tu escape ideal comienza aquí.</p>
   </header>
 
@@ -19,21 +19,33 @@
       <p>Lo mejor para vacacionar y hospedarse.</p>
     </section>
 
-    <section id="destinos" class="carousel">
-      <div
-        class="slides"
-        [style.transform]="'translateX(-' + currentIndex * 100 + '%)'"
-      >
-        <div class="slide" *ngFor="let img of images">
-          <img [src]="img" alt="Imagen del carrusel" />
-        </div>
+   <section id="destinos" class="carousel-wrapper">
+  <div class="carousel">
+    <div
+      class="slides"
+      [style.transform]="'translateX(-' + currentIndex * 100 + '%)'"
+    >
+      <div class="slide" *ngFor="let img of images">
+        <img [src]="img" alt="Imagen del carrusel" />
       </div>
+    </div>
+  </div>
 
-      <div class="controls">
-        <button (click)="prevSlide()">&#10094;</button>
-        <button (click)="nextSlide()">&#10095;</button>
-      </div>
-    </section>
+  <div class="external-controls">
+    <button (click)="prevSlide()">&#10094;</button>
+    <button (click)="nextSlide()">&#10095;</button>
+  </div>
+
+  <div class="indicators">
+    <span
+      *ngFor="let img of images; let i = index"
+      [class.active]="i === currentIndex"
+      (click)="goToSlide(i)"
+    ></span>
+  </div>
+</section>
+
+
 
     <section id="servicios" class="services">
       <h2>Servicios destacados</h2>
@@ -53,25 +65,83 @@
   >
     <div class="modal-content" (click)="$event.stopPropagation()">
       <span class="close-button" (click)="openModalOfSpa()">&times;</span>
-      <img src="assets/spa.jpg" alt="Imagen del modal de Spa." />
-      <h2>Información del resort</h2>
+      <img src="assets/spaservicio.jpg" alt="Imagen del modal de Spa." />
+      <h2>Información del servicio de Spa</h2>
       <p>
-        Este resort ofrece instalaciones de primer nivel, playa privada, spa completo y mucho más.
+        Spa Relax te ofrece la mayor relajación y calidad de parte de nuestros expertos en Paradise Resorts. Todos los días puedes visitarlos de 8:00 A.M. a 11:00 P.M.
       </p>
     </div>
   </div>
 </li>
         <li>
           <img src="assets/transporte.jpeg" alt="Transporte VIP" />
-          Transporte VIP
+          <p>Transporte VIP</p>
+
+             <div class="button-wrapper">
+    <button (click)="openModalOfTransport()">Ver más</button>
+  </div>
+
+  <div
+    class="modal-backdrop"
+    *ngIf="openModalServiceTransport"
+    (click)="openModalOfTransport()"
+  >
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <span class="close-button" (click)="openModalOfTransport()">&times;</span>
+      <img src="assets/transporteservicio.webp" alt="Imagen del modal de Transporte." />
+      <h2>Información del servicio de Transporte</h2>
+      <p>
+        Te enviamos lo mejor de nuestras filas de vehículos para transporte del aeropuerto al hotel cuando llegues y te vayas. Te ofrecemos transporte individual o para varios huéspedes.
+      </p>
+    </div>
+  </div>
+
         </li>
         <li>
           <img src="assets/tour.jpg" alt="Tour de la ciudad" />
-          Tour de la ciudad
+          <p>Tour de la ciudad</p>
+           <div class="button-wrapper">
+    <button (click)="openModalOfTour()">Ver más</button>
+  </div>
+
+  <div
+    class="modal-backdrop"
+    *ngIf="openModalServiceTour"
+    (click)="openModalOfTour()"
+  >
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <span class="close-button" (click)="openModalOfTour()">&times;</span>
+      <img src="assets/tourservicio.png" alt="Imagen del modal de Tour." />
+      <h2>Información del servicio de Tour</h2>
+      <p>
+        Según en la ciudad en la que hayas reservado de algunos de nuestros hoteles, podrás tener un tour cada día sobre los lugares que posee la ciudad con los guías expertos y que conocen lo mejor de cada rincón de la gran ciudad.
+      </p>
+    </div>
+  </div>
+          
         </li>
         <li>
           <img src="assets/buffet.jpg" alt="Comida buffet" />
-          Comida buffet
+          <p>Comida buffet</p>
+
+           <div class="button-wrapper">
+    <button (click)="openModalOfBuffet()">Ver más</button>
+  </div>
+
+  <div
+    class="modal-backdrop"
+    *ngIf="openModalServiceBuffet"
+    (click)="openModalOfBuffet()"
+  >
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <span class="close-button" (click)="openModalOfBuffet()">&times;</span>
+      <img src="assets/buffetservicio.jpg" alt="Imagen del modal de Buffet." />
+      <h2>Información del servicio de Buffet</h2>
+      <p>
+        ¡Come todo lo que puedas! Este servicio extra de comida te permite comer todo lo que puedas en cualquier comida del día sin coste adicional y puedes usarlo aún si ya recibiste los platos de cualquier tiempo.
+      </p>
+    </div>
+  </div>
         </li>
       </ul>
     </section>

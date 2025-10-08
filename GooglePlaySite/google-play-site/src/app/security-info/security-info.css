@@ -24,3 +24,7 @@
   color: #34a853;
   border-radius: 4px;
 }
+
+.google-play-label:hover{
+  cursor: pointer;
+}

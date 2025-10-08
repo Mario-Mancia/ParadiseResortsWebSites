@@ -1,0 +1,59 @@
+<div class="app-info-dialog">
+
+  <!-- ENCABEZADO -->
+  <div class="dialog-header d-flex align-items-center justify-content-between">
+    <div class="d-flex align-items-center">
+      <img src="images/icono_paradise_resort.svg" alt="App Icon" class="app-icon me-3">
+      <div>
+        <h3 class="dialog-title mb-1">Paradise Resorts</h3>
+        <h6 class="text-muted mb-0">Seguridad de los datos</h6>
+      </div>
+    </div>
+    <button mat-icon-button mat-dialog-close aria-label="Cerrar">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+
+  <!-- CUERPO -->
+  <mat-dialog-content class="dialog-body mat-typography">
+    <p>
+      Aquí tienes más información proporcionada por el desarrollador sobre los tipos de datos que esta aplicación podría recoger y compartir,
+      y sobre las prácticas de seguridad que podría seguir.
+    </p>
+    <p>
+      Las prácticas relacionadas con los datos pueden variar en función de tu versión de la aplicación, el modo en que la utilices,
+      el territorio donde la uses y tu edad.
+      <a href="#" class="info-link">Más información</a>
+    </p>
+
+    <h5 class="mt-4 mb-3">
+      <mat-icon class="me-2">share</mat-icon> No se comparten datos con terceros
+    </h5>
+    <p>
+      El desarrollador indica que esta aplicación no comparte datos de usuario con otras empresas u organizaciones.
+      <a href="#" class="info-link">Más información</a>
+    </p>
+
+    <h5 class="mt-4 mb-3">
+      <mat-icon class="me-2">cloud</mat-icon> Datos que se recogen
+    </h5>
+    <p>Datos que esta aplicación puede recoger:</p>
+    <ul class="feature-list">
+      <li><strong>Información personal:</strong> Nombre, correo electrónico, IDs de usuario y número de teléfono</li>
+      <li><strong>Información y rendimiento de la aplicación:</strong> Registros de fallos</li>
+    </ul>
+
+    <h5 class="mt-4 mb-3">
+      <mat-icon class="me-2">lock</mat-icon> Prácticas de seguridad
+    </h5>
+    <ul class="feature-list">
+      <li><strong>Los datos están cifrados durante el tránsito:</strong> Tus datos se transfieren a través de una conexión segura.</li>
+      <li><strong>Puedes solicitar que se eliminen los datos:</strong> El desarrollador te da la opción de solicitar la eliminación de tus datos.</li>
+    </ul>
+  </mat-dialog-content>
+
+  <!-- ACCIONES -->
+  <mat-dialog-actions align="end" class="pt-3">
+    <button mat-stroked-button mat-dialog-close color="primary">Cerrar</button>
+  </mat-dialog-actions>
+</div>

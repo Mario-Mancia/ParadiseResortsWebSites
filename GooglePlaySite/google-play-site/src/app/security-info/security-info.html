@@ -2,7 +2,7 @@
   <!-- Título e icono de expansión -->
   <div class="d-flex justify-content-between align-items-center mb-3">
     <h4 class="info-title mb-0">Seguridad de los datos</h4>
-    <button class="btn btn-link p-0 text-decoration-none" aria-label="Expandir sección">
+    <button class="btn btn-link p-0 text-decoration-none" aria-label="Expandir sección" (click)="openDialog()">
       <mat-icon>keyboard_arrow_down</mat-icon>
     </button>
   </div>
@@ -59,6 +59,6 @@
     </div>
 
     <!-- Etiqueta final -->
-    <span class="google-play-label">Ver detalles</span>
+    <span class="google-play-label" (click)="openDialog()">Ver detalles</span>
   </div>
 </div>

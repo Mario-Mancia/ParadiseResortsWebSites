@@ -1,0 +1,80 @@
+/* CONTENEDOR GENERAL */
+.custom-info-dialog .mat-mdc-dialog-surface {
+  margin-top: 5vh; /* espacio para la topbar */
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #fff;
+  width: 90vw;
+  max-width: 800px;
+  max-height: 85vh;
+}
+
+/* CONTENIDO GLOBAL */
+.app-info-dialog {
+  padding: 24px 32px;
+  overflow-y: auto;
+}
+
+/* HEADER */
+.dialog-header {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+.app-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.dialog-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.dialog-header button {
+  color: #666;
+}
+
+/* CUERPO */
+.dialog-body {
+  padding-bottom: 8px;
+  line-height: 1.6;
+}
+
+.feature-list {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+/* FOOTER */
+.dialog-footer {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 16px;
+  margin-top: 16px;
+}
+
+.dialog-footer .info-link {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.dialog-footer .info-link:hover {
+  text-decoration: underline;
+}
+
+/* ACCIONES */
+mat-dialog-actions {
+  padding-top: 8px;
+}
+
+/* Scroll elegante dentro del dialog */
+.app-info-dialog::-webkit-scrollbar {
+  width: 6px;
+}
+.app-info-dialog::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}

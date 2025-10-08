@@ -1,0 +1,70 @@
+<div class="home-container">
+
+  <header class="home-header">
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="">Inicio</a></li>
+        <li><a href="contact">Contacto</a></li>
+        <li><a href="about">Acerca De</a></li>
+      </ul>
+    </nav>
+    <h1>Bienvenido a Paradise Resort</h1>
+    <p>Tu escape ideal comienza aquí.</p>
+  </header>
+
+  <main class="home-main">
+
+    <section id="intro" class="intro">
+      <h2>Explora nuestros destinos</h2>
+      <p>Lo mejor para vacacionar y hospedarse.</p>
+    </section>
+
+    <section id="destinos" class="carousel">
+      <div
+        class="slides"
+        [style.transform]="'translateX(-' + currentIndex * 100 + '%)'"
+      >
+        <div class="slide" *ngFor="let img of images">
+          <img [src]="img" alt="Imagen del carrusel" />
+        </div>
+      </div>
+
+      <div class="controls">
+        <button (click)="prevSlide()">&#10094;</button>
+        <button (click)="nextSlide()">&#10095;</button>
+      </div>
+    </section>
+
+    <section id="servicios" class="services">
+      <h2>Servicios destacados</h2>
+      <ul>
+        <li>
+          <img src="assets/spa.jpg" alt="Spa relax" />
+          Spa relax
+        </li>
+        <li>
+          <img src="assets/transporte.jpeg" alt="Transporte VIP" />
+          Transporte VIP
+        </li>
+        <li>
+          <img src="assets/tour.jpg" alt="Tour de la ciudad" />
+          Tour de la ciudad
+        </li>
+        <li>
+          <img src="assets/buffet.jpg" alt="Comida buffet" />
+          Comida buffet
+        </li>
+      </ul>
+    </section>
+
+    <section id="contacto" class="cta">
+      <h2>Obten nuestra aplicación oficial</h2>
+      <button (click)="openLinkOfPlayStoreWebSite()">Descargar</button>
+    </section>
+
+  </main>
+
+  <footer class="home-footer">
+    <p>&copy; 2025 Paradise Resort. Todos los derechos reservados.</p>
+  </footer>
+</div>

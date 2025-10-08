@@ -1,0 +1,9 @@
+<div class="dialog-container">
+      <button class="nav-btn left" (click)="prevImage()"><mat-icon>chevron_left</mat-icon></button>
+
+      <img [src]="images[currentIndex]" class="fullscreen-img" alt="Screenshot">
+
+      <button class="nav-btn right" (click)="nextImage()"><mat-icon>chevron_right</mat-icon></button>
+
+      <button class="close-btn" (click)="closeDialog()"><mat-icon>close</mat-icon></button>
+</div>

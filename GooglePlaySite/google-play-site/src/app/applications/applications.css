@@ -25,3 +25,18 @@
     display: block;
     margin: 0 auto;
 }
+
+.support-details {
+  transition: all 0.3s ease-in-out;
+}
+
+.support-row a {
+  color: #333; /* mismo color que el texto */
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.support-row a:hover {
+  color: #007bff; /* azul elegante en hover */
+  text-decoration: underline;
+}

@@ -6,10 +6,14 @@ import { Changelog } from '../changelog/changelog';
 import { ImageCarousel } from '../image-carousel/image-carousel';
 import { MatIcon } from '@angular/material/icon';
 import { Footer } from '../footer/footer';
+import { MatIconModule } from '@angular/material/icon';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-applications',
   imports: [
+    MatIconModule,
+    CommonModule,
     MatIcon,
     AppHeader,
     AppInfo,
@@ -22,5 +26,9 @@ import { Footer } from '../footer/footer';
   styleUrls: ['./applications.css']
 })
 export class Applications {
+  supportExpanded = false;
 
+  toggleSupport() {
+    this.supportExpanded = !this.supportExpanded;
+  }
 }

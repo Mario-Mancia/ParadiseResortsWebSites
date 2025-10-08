@@ -1,0 +1,72 @@
+.dialog-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Fondo degradado tipo Google Photos */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.85) 100%);
+  margin: 0;
+  padding: 0;
+}
+
+.fullscreen-img {
+  max-width: 96vw;
+  max-height: 96vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.7);
+  transition: transform 0.25s ease;
+}
+
+.fullscreen-img:hover {
+  transform: scale(1.02); /* ligero zoom al pasar encima */
+}
+
+/* Botones navegación */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 38px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px;
+  transition: background 0.2s ease, opacity 0.3s ease;
+  opacity: 0.8;
+}
+
+.nav-btn:hover {
+  background: rgba(0,0,0,0.75);
+  opacity: 1;
+}
+
+.nav-btn.left { left: 20px; }
+.nav-btn.right { right: 20px; }
+
+/* Botón cerrar arriba a la derecha */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease, opacity 0.3s ease;
+  opacity: 0.8;
+}
+
+.close-btn:hover {
+  background: rgba(0,0,0,0.75);
+  opacity: 1;
+}
